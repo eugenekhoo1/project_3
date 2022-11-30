@@ -8,6 +8,7 @@ import pickle
 import string
 import streamlit as st
 import re
+import sklearn
 
 # Define clean data function
 
