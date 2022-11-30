@@ -3,12 +3,11 @@
 
 import pandas as pd
 import nltk
+nltk.download('wordnet')
 import pickle
 import string
 import streamlit as st
 import re
-
-nltk.download('wordnet')
 
 # Define clean data function
 
