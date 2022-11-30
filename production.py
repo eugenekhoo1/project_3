@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[30]:
-
-
 import pandas as pd
-import re
 import nltk
 import pickle
 import string
 import streamlit as st
+import re
 
 nltk.download('wordnet')
 
