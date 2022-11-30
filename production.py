@@ -3,7 +3,6 @@
 
 import pandas as pd
 import nltk
-nltk.download('wordnet')
 import pickle
 import string
 import streamlit as st
