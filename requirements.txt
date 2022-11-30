@@ -1,0 +1,6 @@
+pandas
+re
+nltk
+pickle
+string
+streamlit
