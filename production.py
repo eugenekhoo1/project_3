@@ -3,6 +3,7 @@
 
 import pandas as pd
 import nltk
+nltk.download('stopwords')
 import pickle
 import string
 import streamlit as st
