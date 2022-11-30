@@ -1,5 +1,2 @@
 pandas
 nltk
-pickle
-string
-streamlit
