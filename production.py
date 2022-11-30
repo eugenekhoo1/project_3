@@ -66,7 +66,7 @@ class classify():
                 feature_dict['token'].append(i)
             except:
                 pass
-        return pd.DataFrame(feature_dict).sort_values(by='score', key=abs, ascending=False).set_index('token')
+        return pd.DataFrame(feature_dict).sort_values(by='score', key=abs, ascending=False).drop_duplicates(inplace=True).set_index('token')
     
     def result_(self):
         print(self.predict_())
