@@ -4,6 +4,7 @@
 import pandas as pd
 import nltk
 nltk.download('stopwords')
+nltk.download('omw-1.4')
 import pickle
 import string
 import streamlit as st
