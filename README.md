@@ -23,7 +23,7 @@ We ran these two sets of data through three models:
 ## Results
 From the six models, we notice that TF-IDF vectorized dataset perform better than count vectorized ones, while logistic regressoins outperform naive bayes models.
 The ROC curve shows that this is the case on average across all threshold levels.
- insert roc curve
+<img src="https://github.com/eugenekhoo1/project_3/blob/main/images/ROC1.png"> <img src="https://github.com/eugenekhoo1/project_3/blob/main/images/ROC2.png">
 
  The best performing model is the logistic regression model on TF-IDF vectorized data, with train scores of 93.7% and test scores of 86.3%
 
