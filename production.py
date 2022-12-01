@@ -3,7 +3,7 @@
 
 import pandas as pd
 import nltk
-nltk.download('stopwords')
+nltk.download('wordnet')
 nltk.download('omw-1.4')
 import pickle
 import string
