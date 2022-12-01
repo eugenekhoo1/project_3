@@ -70,7 +70,6 @@ class classify():
                 pass
         df = pd.DataFrame(feature_dict).sort_values(by='score', key=abs, ascending=False)
         df.drop_duplicates(inplace=True)
-        df.set_index('token', inplace=True)
         return df.head(10)
     
     def result_(self):
@@ -89,7 +88,7 @@ with st.container():
     st.subheader('Anxiety vs Depression')
 
 with st.container():
-    subreddit_text = st.text_input('Input Text', value='')
+    subreddit_text = st.text_area('Input Text', value='')
 
 subreddit_obj = classify(subreddit_text)
 
