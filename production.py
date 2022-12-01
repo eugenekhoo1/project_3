@@ -82,8 +82,8 @@ st.set_page_config(page_title='Project 3')
 # Header
 
 with st.container():
-    st.title('Subreddit Classifier')
-    st.subheader('r/Anxiety and r/Depression')
+    st.title('Classifier')
+    st.subheader('Anxiety vs Depression')
 
 with st.container():
     subreddit_text = st.text_input('Input Subreddit Text', value='')
