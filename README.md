@@ -33,7 +33,7 @@ The ROC curve shows that this is the case on average across all threshold levels
 
 The top 10 features in predicting classes are also shown below.
 
-<img src="https://github.com/eugenekhoo1/project_3/blob/main/images/features.png">
+<img src="https://github.com/eugenekhoo1/project_3/blob/main/images/feature.png">
 
 ## Production
 With our results, we deployed the model onto [streamlit](https://eugenekhoo1-project-3-test-production-c7fxml.streamlit.app/) to classify users posts into Anxiety and Depression.
