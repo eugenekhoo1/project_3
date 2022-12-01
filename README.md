@@ -1,6 +1,7 @@
 # Project 3: Using NLP to classify user posts
 
 ## Problem Statement
+This project aims to classify a user's post into one of two categories - Anxiety, Depression. With this information, moderators on forums (without labelled data) are able to identify at risk users and allocate the appropriate help/resources to them.
 
 ## Methodology
 In order to build the classifier we scraped the r/Anxiety and r/Depression subreddit forums to train our models. A total of 6,000 posts were pulled (3,000 each) with 2,754 (anx) and 2,351 (dep) remaining after removing empty posts. 
