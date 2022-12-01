@@ -35,6 +35,8 @@ def clean_data_lemm(text):
 
 tfidf_vec, tfidf_lr = pickle.load(open('nlp.pickle', 'rb'))
 
+# Define class
+
 class classify():
     
     def __init__(self, text):
@@ -68,36 +70,37 @@ class classify():
                 pass
         df = pd.DataFrame(feature_dict).sort_values(by='score', key=abs, ascending=False)
         df.drop_duplicates(inplace=True)
-        df.set_index('token')
+        df.set_index('token', inplace=True)
         return df.head(10)
     
     def result_(self):
         print(self.predict_())
         print(self.feature_())
 
+
 # Streamlit Implementation
 
-st.set_page_config(page_title='Project 3')
+st.set_page_config(page_title='Chippy')
 
 # Header
 
 with st.container():
-    st.title('Classifier')
+    st.title('Chippy')
     st.subheader('Anxiety vs Depression')
 
 with st.container():
-    subreddit_text = st.text_input('Input Subreddit Text', value='')
+    subreddit_text = st.text_input('Input Text', value='')
 
 subreddit_obj = classify(subreddit_text)
 
 def Predict():
-    st.write(f"Prediction: {subreddit_obj.predict_()}")
-    st.text(f"Token Scores: \n {subreddit_obj.feature_()}")
+    with st.container():
+        st.markdown(f"Prediction: __{subreddit_obj.predict_()}__")
+        st.write('Token Scores:', subreddit_obj.feature_())
 
 def Clear():
     subreddit_text = ''
 
 st.button('Predict', on_click=Predict)
 st.button('Clear', on_click=Clear)
-
 
